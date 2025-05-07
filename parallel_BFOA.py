@@ -111,6 +111,8 @@ if __name__ == "__main__":
             veryBest[0] = bestIdx
             veryBest[1] = bestFitness
             veryBest[2] = copy.deepcopy(poblacion[bestIdx])
+       
+        #Aqui es donde se hizo la mejora
         # Identificar los peores índices (excepto el mejor)
         peores_idx = [i for i in range(len(poblacion)) if i != veryBest[0]]
 
