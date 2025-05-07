@@ -256,6 +256,8 @@ class bacteria():
         #reemplaza la bacteria peor por una copia de la mejor
         poblacion[worst] = copy.deepcopy(poblacion[best])
 
+
+    #Se agrego esta funcion revisará las bacterias con peor fitness y hará pequeñas mutaciones guiadas
     def mutacion_adaptativa(self, poblacion, worst_idx_list, prob_mut=0.7):
         for idx in worst_idx_list:
             if random.random() < prob_mut:
